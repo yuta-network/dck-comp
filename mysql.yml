@@ -5,7 +5,7 @@ services:
     restart: always
     environment:
       - MYSQL_DATABASE=gtpay
-      - MYSQL_ROOT_PASSWORD=**123**GTPay
+      - MYSQL_ROOT_PASSWORD=123123123
       - MYSQL_ROOT_HOST=%
     volumes:
       - mysql-data:/var/lib/mysql
@@ -16,9 +16,9 @@ services:
     image: phpmyadmin/phpmyadmin:5.0.1
     restart: always
     environment:
-      PMA_HOST=mysql-server
-      PMA_USER=root
-      PMA_PASSWORD=**123**GTPay
+      PMA_HOST: mysql-server
+      PMA_USER: root
+      PMA_PASSWORD: 123123123
     ports:
       - "8080:80"
 volumes:
